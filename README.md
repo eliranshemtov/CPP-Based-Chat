@@ -1,4 +1,4 @@
-# CP++ Based-Chat
+# C++ Based-Chat
 [Academic Project] - C++ based chat, built in a Linux environment.
 Main goal: Implementing and understanding core network features, using C++.
 Hybrid P2P and client-server messenger application that enables two clients to send and receive messages between one and the other.
@@ -6,29 +6,19 @@ Hybrid P2P and client-server messenger application that enables two clients to s
 ----------------------------------------------------------------------------------------------------------------------------------
 
 The developed project will implement the following functionality:
-1. The project will include two apps: Messenger Server App (MSA) and
-Messenger Client App (MCA).
-2. The communication between the MCA and MSA will be TCP based
-(control messages).
-3.The communication between two MCA’s will be UDP based
-(interaction between two clients).
-4. To connect to the server the client will sign in using a user name and a
-password (encryption is not required).
-? The client can create a new user with a new password (unless
-this user is already created).
-? To communicate with another client, the user will request to
-open a session with the required user name.
-? The list of usernames and passwords will be saved into a file in
-the server side.
+1. The project will include two apps: Messenger Server App (MSA) and Messenger Client App (MCA).
+2. The communication between the MCA and MSA will be TCP based (control messages).
+3. The communication between two MCA’s will be UDP based (interaction between two clients).
+4. To connect to the server the client will sign in using a user name and a password (encryption is not required).
+? The client can create a new user with a new password (unless this user is already created).
+? To communicate with another client, the user will request to open a session with the required user name.
+? The list of usernames and passwords will be saved into a file in the server side.
 5. Chat rooms (conference chat):
 ? The client is able to open a chat room.
 ? A chat room may be closed only by its creator.
 ? Each client can enter a chat room or leave it.
-? Once a client enters a chat room it will receive all messages
-sent by all the other clients in the room, and all the clients will
-receive his messages.
-? In order not to overload the server, all client communication is
-P2P using UDP and does not pass through the server.
+? Once a client enters a chat room it will receive all messages sent by all the other clients in the room, and all the clients will receive his messages.
+? In order not to overload the server, all client communication is P2P using UDP and does not pass through the server.
 6. Messenger Server App CLI:
 ? lu - list all users
 ? lcu - list all connected users
@@ -56,7 +46,6 @@ connected)
 ? cs - disconnect the open session / exit from a room
 ? d - disconnect from server
 ? x - close the app
-The user will be notified in each change in the client state with a
-proper message printed to the screen.
+The user will be notified in each change in the client state with a proper message printed to the screen.
 8. Each incoming message will be printed in the format:
 >[Moshe] What's up?
