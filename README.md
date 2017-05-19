@@ -26,8 +26,7 @@ The developed project will implement the following functionality:
   * lr - list all rooms
   * lru <room name> - list all users in this room
   * x - shutdown
-  
-  * Messenger Client App CLI:
+7. Messenger Client App CLI:
   * c <IP> - connect to the server in the given ip
   * lu - print the user list from the server
   * lcu - print the connected users list
